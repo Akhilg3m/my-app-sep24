@@ -261,5 +261,13 @@ GIT:
 
         git add .
 
+        git commit -m "First commit"
+
+        git push      
+                
+                        (first time suggestion with -f command)
+
+
+
 
 
