@@ -1,0 +1,89 @@
+<!-- <h1>Event Regitration</h1>
+<label for="">Name</label>
+<input type="text" [(ngModel)]="name">
+<button (click)="submit()">submit</button>
+
+<h1>Registred Users</h1>
+
+<ol>
+    <li *ngFor="let name of names">{{name}}</li>
+</ol>
+<button (click)="delete()">delete</button>
+
+<hr><hr>
+<h1>Student Registration</h1>
+
+<label for="">Name:</label>
+<input type="text" [(ngModel)]="studentName">
+<label for="">Age:</label>
+<input type="number" [(ngModel)]="studentAge">
+<button (click)="create()">create</button>
+
+<h1>Total Studetns</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of studets">
+            <td>{{student.name}}</td>
+            <td>{{student.age}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ================================= -->
+
+<h1>Create Product</h1>
+
+<label for="">Name:</label>
+<input type="text" [(ngModel)]="productName">
+<br>
+<label for="">Price:</label>
+<input type="text" [(ngModel)]="price">
+<br>
+<label for="">Rating:</label>
+<input type="text" [(ngModel)]="rating">
+<br>
+<label for="">Delivery Date:</label>
+<input type="date" [(ngModel)]="deliveryDate">
+<br>
+<label for="">Free Delivery:</label>
+<label for="">Yes</label>
+<input type="radio" name="fd" value="true" [(ngModel)]="freeDelivery">
+<label for="">No</label>
+<input type="radio" name="fd" value="false" [(ngModel)]="freeDelivery">
+<br>
+<button (click)="submit1()">submit1</button> -->
+
+
+<h1>List of Products</h1>
+
+<table>
+    <thead>
+        <th>sno</th>
+        <th>name</th>
+        <th>price</th>
+        <th>rating</th>
+        <th>delivery date</th>
+        <th>free delivery</th>
+        <th>actions</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.rating}}</td>
+            <td>{{product.deliveryDate | date:'yyyy-MMM-dd'}}</td>
+            <td>{{product.freeDelivery}}</td>
+            <td>
+                <button (click)="delete(i)">delete</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

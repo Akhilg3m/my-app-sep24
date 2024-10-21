@@ -1,0 +1,56 @@
+/* Styles for the Vehicle Form Component */
+h1{
+    text-align: center;
+}
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    /* width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; */
+}
+
+form button:hover {
+    /* background-color: #45a049; */
+}
+
+form input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.error{
+    color: red;
+    margin: 0;
+}
+
+button:invalid{
+    opacity: 0.5;
+}

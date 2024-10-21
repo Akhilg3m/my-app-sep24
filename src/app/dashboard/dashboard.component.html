@@ -1,0 +1,27 @@
+<div class="parent">
+
+    <div class="left">
+
+        <h1>My Website</h1>
+        <hr>
+        
+        <h3 routerLink="home">Home</h3>
+        <h3 routerLink="welcome">Welcome</h3>
+        <h3 routerLink="databinding">Data Binding</h3>
+        <h3 routerLink="calculator">Calculator</h3>
+        <h3 routerLink="directives">Diretives</h3>
+        <h3 routerLink="pipes">Pipes</h3>
+        <h3 routerLink="tasks">Tasks</h3>
+        <h3 routerLink="higher-order">Higher Order</h3>
+        <h3 routerLink="vehicle">Vehicle</h3>
+        <h3 routerLink="create-vehicle">Create Vehicle</h3>
+        <h3 routerLink="create-user">Create user</h3>
+
+        <button (click)="logout()">logout</button>
+
+    </div>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>

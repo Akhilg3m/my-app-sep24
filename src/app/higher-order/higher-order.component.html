@@ -1,0 +1,44 @@
+<h6>FLIPKART</h6>
+
+<button (click)="add20()">add 20 delivery charges</button>
+<button (click)="discount()">50% discount</button>
+<br><br>
+
+<select [(ngModel)]="category" (change)="categoryChange()">
+    <option>gadgets</option>
+    <option>fashion</option>
+    <option>footware</option>
+    <option>accessories</option>
+</select>
+
+<input type="text" placeholder="search" [(ngModel)]="term" (keyup)="search()">
+<br><br>
+
+
+<button (click)="pricelh()">price low to high</button>
+<button (click)="pricehl()">price high to low</button>
+<br><br>
+
+<button (click)="totalPrice()">Total Cart Price</button>
+<br><br>
+
+<p>Total Cart Items: <mark>{{products.length}}</mark> </p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.rating}}</td>
+        </tr>
+    </tbody>
+</table>
