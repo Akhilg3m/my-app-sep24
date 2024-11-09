@@ -220,6 +220,7 @@ Reamining Topics:
 4) Theory
 
 
+
 Other:
 ======
 1) Bootstrap
@@ -264,8 +265,35 @@ GIT:
         git commit -m "First commit"
 
         git push      
-                
+
                         (first time suggestion with -f command)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

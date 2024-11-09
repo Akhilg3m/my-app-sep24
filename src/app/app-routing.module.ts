@@ -31,8 +31,8 @@ const routes: Routes = [
     {path:'vehicle', component:VehicleComponent},
     {path:'create-vehicle', component:CreateVehicleComponent},
     {path:'create-user', component:CreateUserComponent},
-    {path:'vehicle-details/:id', component:VehicleDetailsComponent}
-    
+    {path:'vehicle-details/:id', component:VehicleDetailsComponent},
+    {path:'edit-vehicle/:id', component: CreateVehicleComponent}
   ]},
   {path:'',component:LoginComponent},
   {path:'**', component:PageNotFoundComponent}
