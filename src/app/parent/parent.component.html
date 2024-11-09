@@ -1,0 +1,41 @@
+<p>parent works!</p>
+<input type="text" [(ngModel)]="ap">
+<p>b in parent: {{bp}}</p>
+
+
+<app-child [ac]="ap" (bEvent)="catch($event)">
+    <h1>Hey Child!!!!!!</h1>
+</app-child>
+
+
+<!-- <button [disabled]="true" (click)="submit()">submit</button> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+[
+    {
+        "Vehicle": "Prasad-Thar",
+        "manufacturer": "Mahendra",
+        "model": "2024",
+        "type": "Suv",
+        "fuel": "Diesel",
+        "color": "Red",
+        "image": "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Thar-ROXX/8438/1723692413550/front-left-side-47.jpg",
+        "cost": "2200000",
+        "id": "33"
+      },
+      {
+        "Vehicle": "Prasad-Thar",
+        "manufacturer": "Mahendra",
+        "model": "2024",
+        "type": "Suv",
+        "fuel": "Diesel",
+        "color": "Red",
+        "image": "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Thar-ROXX/8438/1723692413550/front-left-side-47.jpg",
+        "cost": "2200000",
+        "id": "33"
+      }
+]

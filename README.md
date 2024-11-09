@@ -214,10 +214,13 @@ Reactive Forms:
 
 Reamining Topics:
 =================
-1) Edit
-2) Communication
-3) Customs
-4) Theory
+1) Edit - Done
+2) Communication 
+        1) Page Communication - view, edit
+        2) Module Communiation - eager, lazy, pre
+        3) Component Communication - pc, cp ,sibling
+3) Customs - Done
+4) Theory - 
 
 
 
@@ -270,8 +273,23 @@ GIT:
 
 
 
+        parent.html
+        ----------
+
+                <app-child [ac]="10" (bEvent)="catch($event)"></app-child>
 
 
+        child.ts
+        --------
+
+                @Input() public ac:number = 0;
+
+
+                @Output() public bEvent:EventEmitter<number> = new EventEmitter();
+                
+                send(){
+                        this.bEvent.emit(20);
+                }
 
 
 

@@ -20,6 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { BalancePipe } from './balance.pipe';
+import { CapitalDirective } from './capital.directive';
+import { AboutUsModule } from './about-us/about-us.module';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { SiblingsComponent } from './siblings/siblings.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
 
 @NgModule({
   declarations: [
@@ -38,14 +46,22 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     VehicleComponent,
     CreateVehicleComponent,
     CreateUserComponent,
-    VehicleDetailsComponent
+    VehicleDetailsComponent,
+    BalancePipe,
+    CapitalDirective,
+    ParentComponent,
+    ChildComponent,
+    SiblingsComponent,
+    Sibling1Component,
+    Sibling2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
